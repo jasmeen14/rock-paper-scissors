@@ -14,33 +14,39 @@ function getComputerChoice(){
     const randomNumber = Math.floor(Math.random()* 3);
     return choices[randomNumber];
 }
-getComputerChoice(); 
 function game(userChoice){
-    const getComputerChoice = getComputerChoice();
-    const name = "pine"
-    if(name === "david"){
-        console.log("hello")
-    }
-    else if(name === "pine"){
-        console.log("hey");
-    
+    const computerChoice = getComputerChoice();
+    switch(userChoice + computerChoice){
+        case "rp":
+        case "pr":
+        case "sp":
+            console.log("USER WINS.");
+            break;
+         case"rp":
+         case "ps":
+         case"sr":
+            console.log("COMPUTER WINS.");
+            break;
+         case"rr":
+         case "pp":
+         case"ss":
+            console.log("COMPUTER WINS.");
+            break;
+        }
 }
-    //console.log("++"+ userChoice);
-    game();
-}
-function main(){
-    rock_div.addEventListener("click", fuction());
+ function main(){
+    rock_div.addEventListener("click", fuction()
     {
         game("r");
-      }
-      paper_div.addEventListener("click", fuction());
+      });
+      paper_div.addEventListener("click", fuction()
       {
         game("p");
-      }
-      scissors_div.addEventListener("click", fuction());
+      });
+      scissors_div.addEventListener("click", fuction()
       {
         game("s");
-      }
+      });
     }
 main();
 
