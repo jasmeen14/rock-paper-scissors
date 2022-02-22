@@ -42,8 +42,8 @@ font-family: sans-serif;
 }
 #computer-label{
     position: absolute;
-    top: 30px;
-    right:200px;
+    top: 26px;
+    right: -35px;px;
 }
 .result{
     font-size: 40px;
