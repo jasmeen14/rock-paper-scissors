@@ -25,24 +25,25 @@ font-family: sans-serif;
     font-size: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    position: relative;
 }
 .badge{
-    background: #24272e;
+    background: #e25840;
     color: white;
-    font-size: 14px;
+    font-size: 20px;
     padding: 2px 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 
 }
 #user-label{
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: -25px;
 }
 #computer-label{
     position: absolute;
     top: 30px;
-    right: -30px;
+    right:200px;
 }
 .result{
     font-size: 40px;
