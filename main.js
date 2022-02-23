@@ -9,45 +9,24 @@ const rock_div = document.getElementById("r"); // dom variable
 const paper_div = document.getElementById("p");// dom variable
 const scissors_div = document.getElementById("s");// dom variable
 
-function getComputerChoice(){
-    const choices = ['r','p','s'];
-    const randomNumber = Math.floor(Math.random()* 3);
-    return choices[randomNumber];
-}
 function game(userChoice){
-    const computerChoice = getComputerChoice();
-    switch(userChoice + computerChoice){
-        case "rp":
-        case "pr":
-        case "sp":
-            console.log("USER WINS.");
-            break;
-         case"rp":
-         case "ps":
-         case"sr":
-            console.log("COMPUTER WINS.");
-            break;
-         case"rr":
-         case "pp":
-         case"ss":
-            console.log("COMPUTER WINS.");
-            break;
-        }
+    console.log("choice"+ userChoice);
 }
- function main(){
-    rock_div.addEventListener("click", fuction()
-    {
-        game("r");
-      });
-      paper_div.addEventListener("click", fuction()
+
+//function main(){
+    rock_div.addEventListener("click", fuction())
+        console.log('rock');//
+       // game("r");
+     // }
+      paper_div.addEventListener("click",fuction())
       {
-        game("p");
-      });
-      scissors_div.addEventListener("click", fuction()
+        console.log('paper');//game('p');
+      }
+      scissors_div.addEventListener("click",fuction())
       {
-        game("s");
-      });
-    }
+        console.log('scissors'); //game('s');
+      }
+    
 main();
 
 
